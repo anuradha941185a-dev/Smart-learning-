@@ -1,1 +1,184 @@
-F
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learnefy</title>
+
+    <link rel="stylesheet" href="My.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <nav class="nav">
+
+            <!-- LOGO -->
+
+            <div class="logo">
+
+                <img class="cimg" src="https://github.com/anuradha941185a-dev/Smart-learning-/blob/96aff3fcdcd716e29f25e20547ac1268bac467c6/left%20cornerimg.JPG" alt="Logo">
+
+                <div class="logo-text">
+                    <h2>Learnefy</h2>
+                    <p>Learn, Grow, Succeed</p>
+                </div>
+
+            </div>
+
+            <!-- NAV LINKS -->
+
+            <ul class="hlinks">
+
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+
+            </ul>
+
+            <!-- SEARCH -->
+
+            <div class="search">
+
+                <input class="searchbox" type="text" placeholder="Search...">
+
+                <button class="searchbutton">
+                    Search
+                </button>
+
+            </div>
+
+            <!-- LOGIN BUTTONS -->
+
+            <div class="loginbar">
+
+                <button class="log">
+                    Log in
+                </button>
+
+                <button class="sign">
+                    Sign up
+                </button>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- HERO SECTION -->
+
+    <section class="content">
+
+        <!-- LEFT CONTENT -->
+
+        <div class="cheading">
+
+            <h1 class="bicontent">
+                Learn Anything
+            </h1>
+
+            <h1 class="bi2content">
+                Anywhere
+            </h1>
+
+            <p class="smcontent">
+
+                Start your learning journey with expert-led courses designed for beginners and professionals.
+                Build skills for the future.
+
+            </p>
+
+            <div class="cbutton">
+
+                <button class="button1">
+                    Explore Courses
+                </button>
+
+                <button class="button2">
+                    Start Learning Free
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- RIGHT BOXES -->
+
+        <div class="right-boxes">
+
+            <div class="border">
+
+                <img src="courses.JPG" alt="">
+
+                <div>
+
+                    <div class="number">
+                        200+
+                    </div>
+
+                    <div class="label">
+                        Courses
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="border">
+
+                <img src="Cap.JPG" alt="">
+
+                <div>
+
+                    <div class="number">
+                        10,000+
+                    </div>
+
+                    <div class="label">
+                        Students
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="border">
+
+                <img src="time.JPG" alt="">
+
+                <div>
+
+                    <div class="number">
+                        Lifetime
+                    </div>
+
+                    <div class="label">
+                        Access
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="tvimg">
+            <img class="tv" src="Tv.JPG" alt="" />
+        </div>
+        <div class="tvcontent">
+        <ul>
+            <li>Expert Instructors </li>
+            <li>Learn from industry experts with real-world experience </li>
+        </ul>
+        </div>
+
+    </section>
+
+</body>
+
+</html>
