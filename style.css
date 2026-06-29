@@ -1,0 +1,163 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: radial-gradient(circle at top, #1a1a1a, #000);
+    color:white;
+    overflow-x:hidden;
+    
+}
+
+/* NAVBAR */
+nav{
+    display:flex;
+    flex-direction: column ;
+    jutify-content:space-between;
+    align-items:center;
+    padding:20px 40px;
+    margin:20px;
+    border-radius:20px;
+
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(15px);
+
+    box-shadow: 0 0 25px rgba(255,215,0,0.15);
+}
+
+.logo{
+    //font-size:32px;
+    font-size:clamp(22px, 4vw, 40px );
+    color:gold;
+    font-weight:bold;
+    text-shadow:0 0 10px gold, 0 0 25px gold;
+}
+
+ul{
+    display:flex;
+    gap:20px;
+    list-style:none;
+}
+
+ul li{
+    cursor:pointer;
+    transition:0.3s;
+}
+
+ul li:hover{
+    color:gold;
+}
+
+/* HERO */
+.hero{
+    text-align:center;
+    margin-top:40px;
+}
+
+.hero h1{
+    color:gold;
+    font-size:28px;
+    text-shadow:0 0 20px gold;
+}
+
+.hero p{
+    margin-top:10px;
+    letter-spacing:3px;
+    opacity:0.7;
+}
+
+/* CARDS */
+.container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-top:60px;
+    flex-wrap:wrap;
+}
+
+.card{
+    width:300px;
+    padding:30px;
+    border-radius:20px;
+    position:relative;
+    overflow:hidden;
+
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(20px);
+
+    transition:0.4s;
+}
+
+/* GOLD ANIMATED BORDER */
+.card::before{
+    content:'';
+    position:absolute;
+    width:200%;
+    height:200%;
+    background: linear-gradient(45deg, gold, transparent, gold);
+    animation: rotate 6s linear infinite;
+}
+
+.card::after{
+    content:'';
+    position:absolute;
+    inset:2px;
+    background:#0b0b0b;
+    border-radius:18px;
+}
+
+/* CONTENT FIX */
+.card *{
+    position:relative;
+    z-index:2;
+}
+
+/* HOVER EFFECT */
+.card:hover{
+    transform:translateY(-10px) scale(1.05);
+    box-shadow:0 0 40px gold;
+}
+
+/* BUTTON */
+button{
+    margin-top:15px;
+    padding:10px 20px;
+    border:none;
+    border-radius:20px;
+    background:linear-gradient(45deg,gold,orange);
+    cursor:pointer;
+    font-weight:bold;
+    position:relative;
+    overflow:hidden;
+}
+
+button::before{
+    content:'';
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:linear-gradient(120deg,transparent,white,transparent);
+    left:-100%;
+}
+
+button:hover::before{
+    left:100%;
+    transition:0.5s;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    margin-top:60px;
+    padding:20px;
+    opacity:0.6;
+}
+
+/* ANIMATION */
+@keyframes rotate{
+    0%{transform:rotate(0deg);}
+    100%{transform:rotate(360deg);}
+}
